@@ -1,0 +1,50 @@
+.customer{
+    width: 30rem;
+    margin: 4rem auto;
+    max-width: 80%;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.search label,
+.search button,
+.search input{
+    display: block;
+    width: 70%;
+}
+
+.search input {
+    padding: 0.1rem 0.25rem;
+    margin: 0.5rem 8rem;
+    width: 50%;
+    border: none;
+    font: inherit;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+.search button{
+    padding: 1rem auto;
+    width: 30%;
+    text-align: center;
+    margin: 0.5rem 8rem;
+}
+
+.search label{
+    margin: 0.5rem 2rem;
+}
+
+.search input:focus{
+    outline: none; 
+    border-block-color: #ff2058;
+}
+
+.info{
+    width: 30rem;
+    margin: 4rem auto;
+    max-width: 80%;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}

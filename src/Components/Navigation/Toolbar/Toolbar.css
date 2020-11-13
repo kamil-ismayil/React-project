@@ -1,0 +1,35 @@
+.Toolbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #703B09;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.Toolbar nav{
+    height: 100%;
+}
+
+.Toolbar div{
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    align-items: center;
+    box-sizing: border-box;
+    color: wheat;
+    
+}
+
+.Toolbar div:hover{
+    color: rgb(207, 186, 147);
+    border-bottom: 4px solid #40A4C8;
+    background-color: #8F5C2C;
+    cursor: pointer;
+}

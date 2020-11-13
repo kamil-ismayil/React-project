@@ -1,0 +1,19 @@
+.trainingg{
+    width: 30rem;
+    height: 6rem;
+    margin: 0.1rem auto;
+    max-width: 70%;
+    padding: 0.1rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    justify-content: left;
+    text-align: left;
+}
+
+.main :hover{
+    background-color:#534f5073;
+}
+
+.main p{
+    pointer-events: none;
+}
