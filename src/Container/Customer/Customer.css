@@ -32,7 +32,8 @@
 }
 
 .search label{
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 4rem;
+
 }
 
 .search input:focus{

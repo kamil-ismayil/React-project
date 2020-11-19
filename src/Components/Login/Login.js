@@ -11,7 +11,6 @@ const login = (props) => {
     
     const loginHandler = (event) => {
         loginContext.login(enteredUserName, enteredPassword);
-        console.log("Sign in button is clicked");
         event.preventDefault();        
     }
 

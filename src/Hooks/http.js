@@ -23,15 +23,14 @@ const httpReducer = (currHttpState, action) => {
 const useHttp = () => {
     const [httpState, dispatchHttp] = useReducer(httpReducer, initialState);
     
-
     const sendRequest = useCallback( (url, method, body) => {  
         dispatchHttp({type: 'SEND'});
         let headers = {'Content-type': 'application/json', 'Accept': 'application/json'};    
-                
-        //axios.get(url, { method: method, body: body,
-        //        headers: {'Content-type': 'application/json', 'Accept': 'application/json'}})
+
         axios.post(url, body, headers)
-        .then(response => { dispatchHttp({type:'RESPONSE', responseData: response.data}); })
+        .then(response => { 
+            dispatchHttp({type:'RESPONSE', responseData: response.data}); 
+        })
         .catch(error => {{ dispatchHttp({type: 'ERROR', errorMessage: 'Something went wrong'}); }});
     }, []);
 

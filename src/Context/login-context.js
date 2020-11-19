@@ -1,6 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import useHttp from '../Hooks/http';
-import axios from 'axios';
 
 export const LoginContext = React.createContext({
     isLogged: false,
@@ -16,14 +15,13 @@ const loginContextProvider = (props) => {
     const loginHandler = useCallback( (username, password) => {
         sendRequest(
             'https://hobbyproject-2020.herokuapp.com/api/login',
-            'GET', 
+            'POST', 
             {username: username, password: password}
         );
     }, [sendRequest]); 
 
     useEffect(() => {
         if(data){
-            //console.log(data.firstName);
             setIsLoggedIn(true);
         }
     },[data]);
