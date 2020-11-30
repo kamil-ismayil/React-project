@@ -1,6 +1,5 @@
-.trainingg{
+.training_main{
     width: 30rem;
-    height: 6rem;
     margin: 0.1rem auto;
     max-width: 70%;
     padding: 0.1rem 1rem;
@@ -10,10 +9,35 @@
     text-align: left;
 }
 
-.main :hover{
-    background-color:#534f5073;
+.training_main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.training_main li {
+margin: 1rem 0;
+padding: 0.5rem 1rem;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+display: flex;
+justify-content: space-between;
 }
 
-.main p{
+.training_sub :hover{
+    background-color:#e7d8db73;
+}
+
+.training_sub button:hover{
+    font-size: 17px;
+    background-color: #ff2058;
+}
+
+.training_applied {
+    background-color: #e9e1e1;
+}
+
+.training_applied button{
     pointer-events: none;
+    cursor: not-allowed;
+    background-color: #fa92ac;
 }

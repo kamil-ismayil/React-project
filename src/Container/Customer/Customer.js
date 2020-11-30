@@ -32,7 +32,7 @@ const customer = React.memo( (props) => {
 
     useEffect( () => {
         if(!error && data){   
-            console.log(JSON.stringify(data));
+            //console.log(JSON.stringify(data));
             dispatch({type: 'SET', customers: data});
         }
     }, [data, error]);
