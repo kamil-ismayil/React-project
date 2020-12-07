@@ -2,12 +2,16 @@ import React, {useContext, useEffect, useState} from 'react';
 import { Redirect } from 'react-router-dom';
 import {LoginContext} from '../../Context/login-context';
 import './Login.css';
+import Signup from '../Signup/Signup';
+import Modal from '../UI/Modal/Modal';
+import Aux from '../../Hoc/Aux_/Aux_';
 
 const login = (props) => {
 
     const loginContext = useContext(LoginContext);
     const [enteredUserName, setEnteredUserName] = useState('');
     const [enteredPassword, setEnteredPassword] = useState('');
+    const [show, setShow] = useState(false);
     
     const loginHandler = (event) => {
         loginContext.login(enteredUserName, enteredPassword);
@@ -31,12 +35,7 @@ const login = (props) => {
                                 onChange={event => setEnteredPassword(event.target.value)} />
                         <button type="submit" >Sign in</button>        
                     </div> 
-                    
-                </form>
-                <div className="login"> 
-                    <button>Sign up</button>        
-                </div>      
-                        
+                </form>            
         </section>
     )
 }
